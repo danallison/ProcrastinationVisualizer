@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>The Procrastination Visualizer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -19,6 +19,54 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        <div id="container">
+          <header>
+            <h1>The Procrastination Visualizer</h1>
+          </header>
+          <ul id="todoList" style="display:none">
+            <li style="font-size:116px;font-family:'Comic Sans MS'">
+              <input type="checkbox">
+              <span>1 week</span>
+            </li>
+            <li style="font-size:102px">
+              <input type="checkbox">
+              <span>6 days</span>
+            </li>
+            <li style="font-size:87px">
+              <input type="checkbox">
+              <span>5 days</span>
+            </li>
+            <li style="font-size:73px">
+              <input type="checkbox">
+              <span>4 days</span>
+            </li>
+            <li style="font-size:59px">
+              <input type="checkbox">
+              <span>3 days</span>
+            </li>
+            <li style="font-size:45px">
+              <input type="checkbox">
+              <span>2 days</span>
+            </li>
+            <li style="font-size:30px">
+              <input type="checkbox">
+              <span>1 day</span>
+            </li>
+            <li style="font-size:16px">
+              <input type="checkbox">
+              <span>brand new</span>
+            </li>
+          </ul>
+          <div id="queueContainer">
+            <h3>Queue</h3>
+            <input type="button" value="new" id="newButton"/>
+            <ul id="todoQueue"></ul>
+          </div>
+          <div id="completedContainer">
+            <h3>Completed</h3>
+            <ul id="completedList"></ul>
+          </div>
+        </div>
 
         <script src="js/main.js"></script>
 
